@@ -27,15 +27,15 @@ const Navigation = () => {
 
   return (
     <>
-    <nav className="lg:flex hidden h-20 gap-2 fixed top-0 left-0 text-white bg-black bg-opacity-5 items-center justify-between z-50 p-8 py-2 w-full">
+    <nav className="lg:flex hidden h-20 gap-2 fixed top-0 left-0 text-white bg-black bg-opacity-25 items-center justify-between z-50 p-8 py-2 w-full">
       <Link href="/" className="">
         <img src="/logo.png" alt="logo" className="w-40 object-contain" />
       </Link>
-        <div className=" relative flex justify-between">
+        <div className=" relative capitalize flex justify-between">
            
             <ul className="">
                 <li className="">
-                    <Link href="/" className="">Connect</Link>
+                    <Link href="/" className="text-white">Connect</Link>
                 </li>
             </ul>
         </div>
