@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import AuthProvider from "@/components/AuthProvider";
@@ -15,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-[#0a2463]">
+      <body className="bg-[#f1f5f9]">
       <AuthProvider>
         <Navigation />
           {children}
