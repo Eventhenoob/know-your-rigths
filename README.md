@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Project Code: CBP08
 
-## Getting Started
+## Digital Assistant for Legal Awareness and Designing a KYR (Know-Your-Rights) Framework in India
 
-First, run the development server:
+### Project Description
+This project aims to develop a digital assistant for legal awareness, particularly focusing on marginalized communities in India. The digital assistant will provide easily accessible legal information in multiple languages, addressing common legal queries and offering guidance on various legal topics. Additionally, the project includes the development of a comprehensive Know-Your-Rights (KYR) framework to educate citizens about their legal rights, entitlements, and remedies.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Smart Education Component
+The project is a part of Smart Education, aiming to leverage technology to enhance legal awareness and access to justice for marginalized communities.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Challenge
+The challenge involves developing a digital assistant that effectively provides legal information and guidance in a user-friendly manner. The digital assistant should be accessible through various devices and languages, addressing common legal queries and providing information on different legal topics.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Judging Criteria
+1. *Effectiveness:* Providing legal information and guidance in a user-friendly manner.
+2. *Accessibility:* Ensuring accessibility through various devices and languages.
+3. *Innovation:* Design and functionality of the digital assistant.
+4. *Scalability and Sustainability:* Potential for scalability and long-term sustainability.
+5. *Impact:* Improving legal awareness and access to justice, particularly for marginalized communities.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Background
+Many citizens in India lack awareness of their legal rights and struggle to navigate the legal system. A comprehensive Know-Your-Rights framework can address this issue by simplifying legal language, categorizing legal rights, and providing user-friendly access to legal information.
 
-## Learn More
+### Solution Components
+1. *Identification of Laws:* Compile relevant laws and regulations governing citizens' lives in India.
+2. *Simplification of Legal Language:* Translate legal language into easily understandable terms.
+3. *Categorization of Legal Rights:* Group laws according to the legal rights they protect.
+4. *User-Friendly Design:* Design a website or mobile application with easy navigation.
+5. *Interactive Features:* Incorporate chatbots, virtual assistants, and decision trees.
+6. *Regional Language Support:* Ensure availability in multiple regional languages.
+7. *Collaboration:* Collaborate with legal aid providers for regular updates.
 
-To learn more about Next.js, take a look at the following resources:
+### Expected Outcomes
+1. A user-friendly KYR framework accessible to citizens across India.
+2. Increased awareness about legal rights and entitlements.
+3. Improved access to justice through better understanding of the legal system.
+4. Enhanced collaboration between legal aid providers and citizens.
+5. Innovation in legal education and awareness.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+For more information, contact [Project Team](mailto:projectteam@example.com).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
+This README file is part of Project CBP08 and is subject to the terms of the MIT license.
