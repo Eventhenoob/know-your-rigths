@@ -1,7 +1,13 @@
 import { NextResponse } from "next/server";
 import OpenAI from "openai";
 
-const openai = new OpenAI({ apiKey: process.env?.CHAT_API_KEY || "" });
+const openai = new OpenAI({
+  apiKey:
+    process.env?.CHAT_API_KEY?.substring(
+      0,
+      process.env?.CHAT_API_KEY.length - 5
+    ) || "",
+});
 
 export async function POST(req: Request) {
   try {
