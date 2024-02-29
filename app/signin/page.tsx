@@ -62,7 +62,7 @@ const page = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   type="email"
-                  className="bg-gray-700 w-full p-3 pl-4 text-sm text-slate-300 outline-none rounded-sm border-b-4 focus:border-main-color"
+                  className="bg-gray-50 w-full p-3 pl-4 text-black  text-xl outline-none rounded-sm border-b-4 focus:border-main-color"
                   name="email"
                   id="email"
                   required
@@ -79,7 +79,7 @@ const page = () => {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   type="password"
-                  className="bg-gray-700 w-full p-3 pl-4 text-sm text-slate-300 outline-none rounded-sm border-b-4 focus:border-main-color"
+                  className="bg-gray-50 w-full p-3 pl-4 text-sm text-black outline-none rounded-sm border-b-4 focus:border-main-color"
                   name="password"
                   id="password"
                   required
