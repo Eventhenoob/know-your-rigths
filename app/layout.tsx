@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import AuthProvider from "@/components/AuthProvider";
-
+import ChatBoxContainer from "@/components/ChatBoxContainer/ChatBoxContainer";
 export const metadata: Metadata = {
   title: "Know Your Rights!",
   description: "",
@@ -21,6 +21,7 @@ export default function RootLayout({
       <AuthProvider>
         <Navigation />
           {children}
+          <ChatBoxContainer />
         </AuthProvider>
         </body>
     </html>

@@ -1,0 +1,17 @@
+.logo {
+animation: animate infinite 2s;
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(100%);
+    }
+
+    50% {
+        transform: scale(120%);
+    }
+
+    100% {
+        transform: scale(100%);
+    }
+}

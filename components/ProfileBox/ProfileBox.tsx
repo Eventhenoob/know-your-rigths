@@ -13,15 +13,10 @@ const ProfileBox = () => {
   const [userData, setUserData] = useState<userData | null>(null);
 
   useEffect(() => {
-    if (
-      data &&
-      data.user &&
-      data.user.name &&
-      data.user.email 
-    ) {
+    if (data && data.user && data.user.name && data.user.email) {
       setUserData({
         name: data.user?.name,
-        email: data.user?.email
+        email: data.user?.email,
       });
     } else setUserData(null);
   }, [data]);
@@ -34,13 +29,15 @@ const ProfileBox = () => {
           className="cursor-pointer flex justify-center items-center overflow-hidden w-8 h-8 ml-3 sm:ml-0 sm:w-10 sm:h-10 shrink-0 rounded-full border-[2px] border-transparent hover:border-main-color active:border-main-color focus:border-main-color bg-red-600"
         >
           {
-            <p className=" w-full flex justify-center items-center h-full">{data.user?.name?.charAt(0)}</p>
+            <p className=" w-full flex justify-center items-center h-full">
+              {data.user?.name?.charAt(0)}
+            </p>
           }
         </Link>
       )}
       {status === "unauthenticated" && (
         <button
-          className="shrink-0  rounded-md bg transition-all lg:block hidden duration-200 font-heading uppercase  p-[4px] pl-[8px] pr-[8px]"
+          className="shrink-0 font-bold rounded-md bg transition-all lg:block hidden duration-200 text-2xl font-heading uppercase  p-[4px] pl-[8px] pr-[8px]"
           onClick={() => signIn()}
         >
           Login

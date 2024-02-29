@@ -10,8 +10,8 @@ interface CardData {
 const Cards = ( { description, image, title } : CardData ) => {
   return (
     <Card style={{
-      width: '18rem',
-      height: '400px',
+      width: '22rem',
+      height: '420px',
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',

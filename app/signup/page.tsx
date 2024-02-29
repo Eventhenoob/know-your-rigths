@@ -103,6 +103,11 @@ const page = () => {
             )}
             <div className="lg:w-3/6 text-white flex items-center justify-center">
               {/* <Lottie animationData={signinAnimation} /> */}
+              <img
+                src="/slider2.png"
+                alt=""
+                className="w-full h-full object-cover"
+              />
             </div>
             <form
               onSubmit={handleSubmit(async (data) => handleFormSubmit(data))}

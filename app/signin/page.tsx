@@ -14,7 +14,7 @@ const page = () => {
     <>
       {status === "unauthenticated" && (
         <main className="w-screen h-screen relative flex md:flex-row justify-center items-center flex-col mb-20">
-          <div className="lg:w-[50%] w-[90%] flex md:flex-row flex-col bg-slate-800 justify-center items-center lg:py-30  rounded-3xl ">
+          <div className="lg:w-[50%] w-[90%] flex md:flex-row flex-col bg-[#000435] justify-center items-center lg:py-30  rounded-3xl ">
             <form
               onSubmit={async (e) => {
                 e.preventDefault();
@@ -47,14 +47,14 @@ const page = () => {
                   {error}
                 </p>
               )}
-              <h1 className="text-white text-4xl font-heading  text-center">
+              <h1 className="text-white mt-10 text-4xl font-heading  text-center">
                 Sign in
               </h1>
               <div className="flex md:flex-row flex-col w-full justify-center items-center"></div>
               <div className="w-full mt-10">
                 <label
                   htmlFor="email"
-                  className="text-white font-bold text-xs mb-2 block"
+                  className="text-white font-bold  mb-2 block"
                 >
                   Email<span className="text-red-600">*</span>
                 </label>
@@ -71,9 +71,9 @@ const page = () => {
               <div className="w-full mt-10">
                 <label
                   htmlFor="password"
-                  className="text-white font-bold text-xs mb-2 block"
+                  className="text-white font-bold mb-2 block"
                 >
-                  password<span className="text-red-600">*</span>
+                  Password<span className="text-red-600">*</span>
                 </label>
                 <input
                   value={password}
@@ -88,20 +88,20 @@ const page = () => {
 
               <button
                 type="submit"
-                className="w-full text-center bg-yellow-400 p-4 mt-10 rounded-xl hover:bg-yellow-500 font-heading text-sm hover:text-slate-200 transition-all duration-300"
+                className="w-full text-center bg-blue-500 p-4 mt-10 rounded-xl hover:bg-blue-600 font-heading text-xl hover:text-slate-200 transition-all duration-300"
               >
                 Signin
               </button>
               <div className="font-retro flex gap-4">
                 <a
                   href="/forgotpassword"
-                  className="hover:text-slate-300 transition-color duration-200  text-gray-400 mt-2 text-sm"
+                  className="hover:text-slate-300 transition-color duration-200  text-gray-400 mt-2 text-xl"
                 >
                   Forgot Password?
                 </a>
                 <a
                   href="/signup"
-                  className="text-gray-400 hover:text-slate-300 transition-color duration-200  mt-2 text-sm"
+                  className="text-gray-400 hover:text-slate-300 transition-color duration-200  mt-2 text-xl"
                 >
                   Create new account
                 </a>
@@ -120,9 +120,7 @@ const page = () => {
       )}
 
       {status === "loading" && (
-        <main className="mainStylesDefault gap-5 flex flex-col p-4">
-          
-        </main>
+        <main className="mainStylesDefault gap-5 flex flex-col p-4"></main>
       )}
     </>
   );
