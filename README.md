@@ -40,4 +40,8 @@ Many citizens in India lack awareness of their legal rights and struggle to navi
 For more information, contact [Project Team](mailto:projectteam@example.com).
 
 ---
+
+![Flowchart](![FlowChart-1](https://github.com/SOUMEN-PAL/know-your-rigths/assets/112452467/f439c709-d0a4-457b-a8b9-a3a54b79b34b)
+
+
 This README file is part of Project CBP08 and is subject to the terms of the MIT license.
