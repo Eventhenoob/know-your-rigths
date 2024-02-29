@@ -6,7 +6,6 @@ import React, { useEffect, useState } from "react";
 interface userData {
   name: string;
   email: string;
-  image: string;
 }
 
 const ProfileBox = () => {
@@ -18,13 +17,11 @@ const ProfileBox = () => {
       data &&
       data.user &&
       data.user.name &&
-      data.user.email &&
-      data.user.image
+      data.user.email 
     ) {
       setUserData({
         name: data.user?.name,
-        email: data.user?.email,
-        image: data.user?.image,
+        email: data.user?.email
       });
     } else setUserData(null);
   }, [data]);
@@ -34,19 +31,16 @@ const ProfileBox = () => {
       {status === "authenticated" && (
         <Link
           href={"/profile"}
-          className="cursor-pointer overflow-hidden w-8 h-8 ml-3 sm:ml-0 sm:w-10 sm:h-10 shrink-0 rounded-full border-[2px] border-transparent hover:border-main-color active:border-main-color focus:border-main-color"
+          className="cursor-pointer flex justify-center items-center overflow-hidden w-8 h-8 ml-3 sm:ml-0 sm:w-10 sm:h-10 shrink-0 rounded-full border-[2px] border-transparent hover:border-main-color active:border-main-color focus:border-main-color bg-red-600"
         >
           {
-            <img
-              src={`/avator-small${data?.user?.image}.png`}
-              alt="user image"
-            />
+            <p className=" w-full flex justify-center items-center h-full">{data.user?.name?.charAt(0)}</p>
           }
         </Link>
       )}
       {status === "unauthenticated" && (
         <button
-          className="shrink-0 bg-main-color rounded-md hover:bg-yellow-300 transition-all lg:block hidden duration-200 font-heading uppercase  p-[4px] pl-[8px] pr-[8px]"
+          className="shrink-0  rounded-md bg transition-all lg:block hidden duration-200 font-heading uppercase  p-[4px] pl-[8px] pr-[8px]"
           onClick={() => signIn()}
         >
           Login

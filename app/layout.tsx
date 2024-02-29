@@ -18,7 +18,7 @@ export default function RootLayout({
       <body className="bg-[#0a2463]">
       <AuthProvider>
         <Navigation />
-        {children}
+          {children}
         </AuthProvider>
         </body>
     </html>

@@ -27,9 +27,9 @@ const Navigation = () => {
 
   return (
     <>
-    <nav className="lg:flex hidden h-20 gap-2 fixed top-0 left-0 text-white bg-black bg-opacity-5 items-center justify-between z-50 p-10 pt-2 pb-2 w-full">
+    <nav className="lg:flex hidden h-20 gap-2 fixed top-0 left-0 text-white bg-black bg-opacity-5 items-center justify-between z-50 p-8 py-2 w-full">
       <Link href="/" className="">
-        <img src="/logo.png" alt="logo" className="w-20 absolute top-8 left-0  object-contain" />
+        <img src="/logo.png" alt="logo" className="w-40 object-contain" />
       </Link>
         <div className=" relative flex justify-between">
            
@@ -54,15 +54,13 @@ const Navigation = () => {
         >
           {!isMobNavActive ? <CiMenuFries /> : <IoMdClose />}
         </button>
-
-        <div className="logo fixed left-20 z-[999]  top-3">
           <Link
             href="/"
-            className="flex gap-1 text-white items-center text-2xl"
+            className="logo fixed left-20 z-[999]  top-3 flex gap-1 w-32 sh text-white items-center text-2xl"
           >
-            <img src="/logo.png" className="w-12" alt="Logo" />
+            <img src="/logo.png" className="w-full" alt="Logo" />
           </Link>
-        </div>
+        
         <ul
           onClick={(e) => e.stopPropagation()}
           className={
