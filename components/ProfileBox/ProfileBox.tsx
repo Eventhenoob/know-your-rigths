@@ -29,7 +29,7 @@ const ProfileBox = () => {
           className="cursor-pointer flex justify-center items-center overflow-hidden w-8 h-8 ml-3 sm:ml-0 sm:w-10 sm:h-10 shrink-0 rounded-full border-[2px] border-transparent hover:border-main-color active:border-main-color focus:border-main-color bg-red-600"
         >
           {
-            <p className=" w-full flex justify-center items-center h-full">
+            <p className=" w-full text-4xl text-white flex justify-center items-center h-full">
               {data.user?.name?.charAt(0)}
             </p>
           }

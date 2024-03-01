@@ -18,7 +18,7 @@ export default function Home() {
             Fight for your rights!
           </h1>
           <button className="py-3 px-5 bg-[#000435] hover:bg-[#101120] hover:scale-110 font-semibold transition-all duration-300 text-white rounded-3xl mt-11">
-            Start Conversition
+            Book Appointment
           </button>
         </div>
       </header>

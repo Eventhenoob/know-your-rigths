@@ -34,7 +34,10 @@ const Navigation = () => {
         <div className=" relative capitalize flex justify-between">
           <ul className="">
             <li className="">
-              <Link href="/" className="text-white text-4xl decoration-0">
+              <Link
+                href="/connect"
+                className="text-white text-4xl decoration-0"
+              >
                 Connect
               </Link>
             </li>
